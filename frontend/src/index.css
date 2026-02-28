@@ -201,3 +201,8 @@ input {
   border: none;
   cursor: pointer;
 }
+
+.unshipped {
+  color: red;
+  font-weight: 600;
+}
