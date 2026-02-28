@@ -30,7 +30,7 @@ function App() {
           <Link to="/products">Products</Link>
           <Link to="/orders">Orders</Link>
           <Link to="/payment">Payment</Link>
-          <Link to="/fullfillment">Fullfillment</Link>
+          <Link to="/fulfillment">Fulfillment</Link>
         </div>
       </header>
       <aside className="sidebar">
