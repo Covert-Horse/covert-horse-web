@@ -6,6 +6,8 @@ import Products from "./Products/Products";
 import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetail';
 import PaymentScreen from './Payment/Payment';
+import Fulfillment from "./Fulfillment/Fulfillment";
+
 function App() {
   const openMenu = () => {
     document.querySelector(".sidebar")?.classList.add("open");
@@ -28,6 +30,7 @@ function App() {
           <Link to="/products">Products</Link>
           <Link to="/orders">Orders</Link>
           <Link to="/payment">Payment</Link>
+          <Link to="/fullfillment">Fullfillment</Link>
         </div>
       </header>
       <aside className="sidebar">
@@ -45,6 +48,7 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/orders/:id" element={<OrderDetail />} />
           <Route path="/payment" element={<PaymentScreen />} />
+          <Route path="/fulfillment" element={<Fulfillment />} />
         </Routes>
       </main>
       <footer className="footer">
