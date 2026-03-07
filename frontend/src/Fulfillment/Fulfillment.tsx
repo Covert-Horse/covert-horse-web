@@ -10,37 +10,53 @@ type FulfillmentOrder = {
 const mockOrders: FulfillmentOrder[] = [
   {
     id: "1001",
-    customer: "Ava Johnson",
+    customer: "Mikayla Hampton",
     shipped: true,
-    items: [{ name: "Shirt", qty: 2 }],
+    items: [{ name: "Slim Shirt", qty: 2 }],
   },
   {
     id: "1002",
-    customer: "Noah Smith",
+    customer: "Ashton Jones",
     shipped: false,
-    items: [{ name: "Pants", qty: 1 }],
+    items: [{ name: "Shirt", qty: 1 }],
   },
   {
     id: "1003",
-    customer: "Mia Davis",
+    customer: "Jake Sully",
+    shipped: true,
+    items: [{ name: "Classic Tee", qty: 2 }],
+  },
+  {
+    id: "1004",
+    customer: "Don Toliver",
+    shipped: true,
+    items: [{ name: "Slim Shirt", qty: 3 }],
+  },
+  {
+    id: "1005",
+    customer: "Tiffany Wilson",
+    shipped: true,
+    items: [
+      { name: "Classic Tee", qty: 3 },
+      { name: "Slim Shirt", qty: 1},
+    ]
+  },
+
+  {
+    id: "1006",
+    customer: "Lauren Riley",
     shipped: false,
     items: [
-      { name: "Shirt", qty: 1 },
-      { name: "Pants", qty: 1 },
+      { name: "Classic Tee", qty: 1 },
     ],
   },
 ];
+
 
 function Fulfillment() {
   return (
     <div className="content">
       <h2>Fulfillment</h2>
-
-      <p>
-        Shipped orders are normal. <span className="unshipped">Unshipped</span>{" "}
-        orders are red.
-      </p>
-
       <ul>
         {mockOrders.map((order) => (
           <li key={order.id} style={{ marginBottom: "1rem" }}>
